@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Vive les Soldes</string>
+    <string name="menu_settings">Settings</string>
+    <string name="prix_initial">Indiquer le prix de l\'article</string>
+    <string name="choix_pourcentage">Sélectionnez la réduction à appliquer</string>
+    <string name="indiquer_prix">Indiquez un prix</string>
+    <string name="remise">Prix avec remise : </string>
+    <string name="prix_final">Prix final :</string>
+    <string name="ajoutPanier">Ajouter au panier</string>
+    <string name="voirPanier">Voir le panier</string>
+    <string name="euro">€</string>
+    
+    <!-- Les differentes valeurs de pourcentages possibles -->
+	<string name="pas_de_reduction">Pas de réduction</string>
+	<string name="moins05pourcent">-5%</string>
+	<string name="moins10pourcent">-10%</string>
+	<string name="moins15pourcent">-15%</string>
+	<string name="moins20pourcent">-20%</string>
+	<string name="moins25pourcent">-25%</string>
+	<string name="moins30pourcent">-30%</string>
+	<string name="moins35pourcent">-35%</string>
+	<string name="moins40pourcent">-40%</string>
+	<string name="moins45pourcent">-45%</string>
+	<string name="moins50pourcent">-50%</string>
+	<string name="moins55pourcent">-55%</string>
+	<string name="moins60pourcent">-60%</string>
+	<string name="moins65pourcent">-65%</string>
+	<string name="moins70pourcent">-70%</string>
+	<string name="moins75pourcent">-75%</string>
+	<string name="moins80pourcent">-80%</string>
+	<string name="moins85pourcent">-85%</string>
+	<string name="moins90pourcent">-90%</string>
+	<string name="moins95pourcent">-95%</string>
+	<string name="moins100pourcent">-100%</string>
+	
+	<!-- AlertDialog permettant de donner un nom a un article -->
+	<string name="texte_donne_nom_article_alert_dialog">Attribuez un nom a l article laissez le champs vide pour nommer automatique l article</string>
+	<string name="nom_article_alert_dialog">nom de l\'article</string>
+	
+	
+	<!-- String de la page permettant de voir son panier -->
+	<string name="titre_panier">Votre panier du moment</string>
+	<string name="nom">Description</string>
+	<string name="prix_initial_panier">Prix initial</string>
+	<string name="pourcentage">-%</string>
+	<string name="remise_panier">Remise</string>
+	<string name="prix_final_panier">Prix</string>
+	<string name="prix_final_a_payer">A payer</string>
+	<string name="remise_finale">Remise totale de </string>
+	<string name="prix_sans_remise_finale">Prix final sans remise</string>
+	<string name="zero">0</string>
+	<string name="vider_son_panier">Vider votre panier</string>
+	<string name="enregistrer_son_panier">Enregistrer votre panier</string>
+	
+	
+</resources>

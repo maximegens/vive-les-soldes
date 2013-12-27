@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	
+	        <requestFocus />
+
+	        <TextView
+	            android:id="@+id/panier_titre"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginTop="10dp"
+	            android:text="@string/titre_panier" />
+	    
+	         <TableLayout
+                android:id="@+id/details_panier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:stretchColumns ="4"         
+                >
+           
+                 <TableRow>
+                        <TextView
+                                android:layout_column="0"
+                                android:layout_height="fill_parent"
+                                android:text="@string/nom"
+                                android:textColor="@color/blanc"
+                                android:background="@color/noir"
+                                android:gravity="center"
+                                android:padding="2dip"
+                                android:layout_margin="2dip"/>                          
+                   
+                        <TextView
+                                android:layout_column="1" 
+                                android:layout_height="fill_parent" 
+                                android:text="@string/prix_initial_panier"
+                                android:background="@color/noir"
+                                android:textColor="@color/blanc"
+                                android:gravity="center"
+                                android:padding="2dip" 
+                                android:layout_margin="2dip"/>
+                        <TextView
+                                android:layout_column="1" 
+                                android:layout_height="fill_parent" 
+                                android:text="@string/pourcentage"
+                                android:background="@color/noir"
+                                android:textColor="@color/blanc"
+                                android:gravity="center"
+                                android:padding="2dip" 
+                                android:layout_margin="2dip"/> 
+                        <TextView
+                                android:layout_column="1" 
+                                android:layout_height="fill_parent" 
+                                android:text="@string/remise_panier"
+                                android:background="@color/noir"
+                                android:textColor="@color/blanc"
+                                android:gravity="center"
+                                android:padding="2dip" 
+                                android:layout_margin="2dip"/>   
+                         <TextView
+                                android:layout_column="1" 
+                                android:layout_height="fill_parent" 
+                                android:text="@string/prix_final_panier"
+                                android:background="@color/noir"
+                                android:textColor="@color/blanc"
+                                android:gravity="center"
+                                android:padding="2dip" 
+                                android:layout_margin="2dip"/>              
+                </TableRow>             
+        </TableLayout>
+        
+	    <View
+			android:layout_width="fill_parent"
+			android:layout_margin="5dp"
+	        android:layout_height="2dp"
+	        android:background="#FF909090" />
+
+	    <RelativeLayout
+	        android:id="@+id/calculPanier"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+
+	        <TextView
+	            android:id="@+id/prix_sans_remise"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:text="@string/prix_sans_remise_finale" />
+
+	        <TextView
+	            android:id="@+id/remise_totale"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_below="@+id/prix_sans_remise"
+	            android:text="@string/remise_finale" />
+
+	        <TextView
+	            android:id="@+id/prix_final"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginRight="20dp"
+	            android:text="@string/prix_final_a_payer" />
+
+	        <TextView
+	            android:id="@+id/prix_a_payer"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="20dp"
+	            android:layout_below="@+id/prix_final"
+	            android:text="@string/zero"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+	        <Button
+		        android:id="@+id/vider_panier"
+		        android:layout_below="@+id/prix_a_payer"
+		        android:layout_width="fill_parent"
+		        android:layout_height="30dp"
+		        android:textSize="12sp"
+		        android:text="@string/vider_son_panier" />
+	        
+	        <Button
+		        android:id="@+id/enregistrer_panier"
+		        android:layout_below="@+id/vider_panier"
+		        android:layout_width="fill_parent"
+		        android:layout_height="30dp"
+		        android:text="@string/enregistrer_son_panier"
+		        android:textSize="12sp" />
+	        
+	    </RelativeLayout>
+
+	    
+	        
+</LinearLayout>
+	
+

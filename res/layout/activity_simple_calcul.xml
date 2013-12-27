@@ -1,0 +1,314 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	>
+		
+	<!-- RelativeLayout pour placer correctement le TextView et EditText du prix initial     -->
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    
+	        <TextView
+	            android:id="@+id/prix_initial"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginTop="20dp"
+	            android:layout_toLeftOf="@+id/prix_initial_edittext"
+	            android:text="@string/prix_initial"
+	            android:textStyle="italic" />
+	
+	    <EditText
+	        android:id="@+id/prix_initial_edittext"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/prix_initial"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="40dp"
+	        android:ems="8"
+	        android:hint="@string/indiquer_prix" 
+	        android:inputType="numberDecimal"
+	        >
+	
+	        <requestFocus />
+	    </EditText>
+	    
+	</RelativeLayout>
+
+	<!-- Positionnement des boutons pour les poucentages -->
+
+	<TextView
+	    android:id="@+id/choix_pourentage"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginLeft="10dp"
+	    android:textStyle="italic"
+	    android:text="@string/choix_pourcentage" />
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="0dp"
+	    >
+	    
+	    <Button android:id="@+id/button_pas_de_reduction"
+	    	android:text="@string/pas_de_reduction"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+	    
+	</LinearLayout>
+	
+	
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    >
+ 
+	    <Button android:id="@+id/button05"
+	    	android:text="@string/moins05pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+		<Button android:id="@+id/button10"
+	    	android:text="@string/moins10pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+		<Button android:id="@+id/button15"
+	    	android:text="@string/moins15pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+		<Button android:id="@+id/button20"
+	    	android:text="@string/moins20pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+	</LinearLayout>
+ 
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+ 
+	    <Button android:id="@+id/button25"
+	    	android:text="@string/moins25pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+		<Button android:id="@+id/button30"
+	    	android:text="@string/moins30pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+		<Button android:id="@+id/button35"
+	    	android:text="@string/moins35pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+		<Button android:id="@+id/button40"
+	    	android:text="@string/moins40pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+	</LinearLayout>
+ 
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+ 
+	    <Button android:id="@+id/button45"
+	    	android:text="@string/moins45pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+		<Button android:id="@+id/button50"
+	    	android:text="@string/moins50pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+		<Button android:id="@+id/button55"
+	    	android:text="@string/moins55pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+		<Button android:id="@+id/button60"
+	    	android:text="@string/moins60pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+	</LinearLayout>
+ 
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+ 
+	    <Button android:id="@+id/button65"
+	    	android:text="@string/moins65pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+		<Button android:id="@+id/button70"
+	    	android:text="@string/moins70pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+		<Button android:id="@+id/button75"
+	    	android:text="@string/moins75pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+		<Button android:id="@+id/button80"
+	    	android:text="@string/moins80pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+	</LinearLayout>
+	
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+ 
+	    <Button android:id="@+id/button85"
+	    	android:text="@string/moins85pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+		<Button android:id="@+id/button90"
+	    	android:text="@string/moins90pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+		<Button android:id="@+id/button95"
+	    	android:text="@string/moins95pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+		<Button android:id="@+id/button100"
+		    android:visibility="invisible"
+	    	android:text="@string/moins100pourcent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			/>
+ 
+	</LinearLayout>
+	
+   	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+	    <TextView
+	        android:id="@+id/remise_pourcentage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="20dp"
+	        android:text="@string/remise" />
+
+	     <TextView
+	        android:id="@+id/remise"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/remise_pourcentage"
+	        android:layout_alignBottom="@+id/remise_pourcentage"
+	        android:layout_alignRight="@+id/prix_final"
+	        android:text="@string/euro" />
+	    
+	    <TextView
+	        android:id="@+id/prix_final"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/prix_final_textview"
+	        android:layout_alignBottom="@+id/prix_final_textview"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="40dp"
+	        android:textStyle="bold"
+	        android:text="@string/euro" />
+	    
+	    <TextView
+	        android:id="@+id/prix_final_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/remise_pourcentage"
+	        android:layout_below="@+id/remise_pourcentage"
+	        android:text="@string/prix_final" />
+	    
+	    <Button
+	   	    android:id="@+id/ajout_panier"
+	   	    style="?android:attr/buttonStyleSmall"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_below="@id/prix_final"
+	   	    android:layout_marginTop="10dp"
+	   	    android:layout_alignRight="@id/prix_final"
+	   	    android:text="@string/ajoutPanier" />
+
+	    <Button
+	        android:id="@+id/voir_panier"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/prix_final_textview"
+	        android:layout_below="@id/prix_final"
+	        android:layout_marginTop="10dp"
+			android:text="@string/voirPanier"/>
+    
+	</RelativeLayout>
+	
+</LinearLayout>  

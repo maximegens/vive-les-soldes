@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:padding="15dip">
+ 
+  <TextView
+    android:id="@+id/donne_nom_article_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/blanc"
+    android:text="@string/texte_donne_nom_article_alert_dialog"
+    android:paddingBottom="10dip" />
+ 
+  <EditText 
+    android:id="@+id/donne_nom_article_edit_text"
+    android:hint="@string/nom_article_alert_dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/donne_nom_article_text_view"  />
+ 
+</RelativeLayout>
