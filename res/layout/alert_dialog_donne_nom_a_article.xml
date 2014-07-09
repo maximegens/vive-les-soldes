@@ -9,7 +9,7 @@
     android:id="@+id/donne_nom_article_text_view"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:textColor="@color/blanc"
+    android:textColor="@color/noir"
     android:text="@string/texte_donne_nom_article_alert_dialog"
     android:paddingBottom="10dip" />
  

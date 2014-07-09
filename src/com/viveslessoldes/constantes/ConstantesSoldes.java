@@ -33,7 +33,7 @@ public class ConstantesSoldes {
 	public static float POURCENTAGE_90 = 90;
 	public static float POURCENTAGE_95 = 95;
 	
-	public static String EURO = "€";
+	public static String EURO = "euros";
 	public static String POURCENTAGE = "%";
 	public static String VIDE = "";
 	public static String ESPACE = " ";

@@ -10,7 +10,6 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnKeyListener;
@@ -20,7 +19,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.viveslessoldes.activity.R;
 import com.viveslessoldes.constantes.ConstantesSoldes;
 import com.viveslessoldes.divers.Article;
 import com.viveslessoldes.divers.CalculPourcentage;
@@ -45,6 +43,7 @@ public class SimpleCalculActivity extends Activity implements View.OnClickListen
 	private Button buttonCliquer;
 	TextView text; 
    
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -106,6 +105,7 @@ public class SimpleCalculActivity extends Activity implements View.OnClickListen
 			public void onClick(View v) {
 				Intent voirPagePanier = new Intent(SimpleCalculActivity.this, VoirPanierActivity.class);
 				startActivity(voirPagePanier);
+				finish();
 			}
 		});
 		
@@ -115,7 +115,7 @@ public class SimpleCalculActivity extends Activity implements View.OnClickListen
 				if((prixInitial.getText().toString() == null) && (prixInitial.getText().toString().trim().length() == 0))
 					Toast.makeText(SimpleCalculActivity.this, "Veuillez indiquer un prix", Toast.LENGTH_SHORT).show();
 				else if (buttonCliquer == null || remise.getText().toString().equals(ConstantesSoldes.EURO))
-					Toast.makeText(SimpleCalculActivity.this, "Veuillez s�lectionner un pourcentage", Toast.LENGTH_SHORT).show();
+					Toast.makeText(SimpleCalculActivity.this, "Veuillez selectionner un pourcentage", Toast.LENGTH_SHORT).show();
 				else
 					showDialog(ConstantesSoldes.DIALOG_NOM_ARTICLE);
 			}
@@ -242,9 +242,9 @@ public class SimpleCalculActivity extends Activity implements View.OnClickListen
 	        				ConstantesSoldes.lesArticles.add(article);
 	        				
 	        				if(ConstantesSoldes.lesArticles.contains(article))
-	        					Toast.makeText(getApplicationContext(), "Article correctement ajout� au panier", Toast.LENGTH_SHORT).show();
+	        					Toast.makeText(getApplicationContext(), "Article correctement ajoute au panier", Toast.LENGTH_SHORT).show();
 	        				else
-	        					Toast.makeText(getApplicationContext(), "Erreur article non ajout�, veuillez r�essayer", Toast.LENGTH_SHORT).show();
+	        					Toast.makeText(getApplicationContext(), "Erreur article non ajoute, veuillez reessayer", Toast.LENGTH_SHORT).show();
 	        				
 	        				/** r�initialisation des composants **/
 	        				nomArticle.setText("");
@@ -282,12 +282,4 @@ public class SimpleCalculActivity extends Activity implements View.OnClickListen
 		super.onDestroy();
 	}
 	
-
-	/**
-	 * Methode pour le menu
-	 */
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.activity_simple_calcul, menu);
-		return true;
-	}
 }

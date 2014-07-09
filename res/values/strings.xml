@@ -2,7 +2,6 @@
 <resources>
 
     <string name="app_name">Vive les Soldes</string>
-    <string name="menu_settings">Settings</string>
     <string name="prix_initial">Indiquer le prix de l\'article</string>
     <string name="choix_pourcentage">Sélectionnez la réduction à appliquer</string>
     <string name="indiquer_prix">Indiquez un prix</string>
@@ -10,7 +9,7 @@
     <string name="prix_final">Prix final :</string>
     <string name="ajoutPanier">Ajouter au panier</string>
     <string name="voirPanier">Voir le panier</string>
-    <string name="euro">€</string>
+    <string name="euro"> euros</string>
     
     <!-- Les differentes valeurs de pourcentages possibles -->
 	<string name="pas_de_reduction">Pas de réduction</string>

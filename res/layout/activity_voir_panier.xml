@@ -131,6 +131,7 @@
 		        android:layout_width="fill_parent"
 		        android:layout_height="30dp"
 		        android:text="@string/enregistrer_son_panier"
+		        android:enabled="false"
 		        android:textSize="12sp" />
 	        
 	    </RelativeLayout>

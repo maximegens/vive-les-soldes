@@ -18,7 +18,6 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TableRow.LayoutParams;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.viveslessoldes.baseDeDonnees.gestionBDD;
 import com.viveslessoldes.constantes.ConstantesSoldes;
@@ -42,6 +41,14 @@ public class VoirPanierActivity extends Activity{
 	private TableRow tr;
 	private Button viderPanier;
 	private Button enregistrerPanier;
+	
+	@Override
+	public void onBackPressed() {
+		Intent retourAcceuil = new Intent(VoirPanierActivity.this, SimpleCalculActivity.class);
+		startActivity(retourAcceuil);
+		finish();
+	}
+	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +97,7 @@ public class VoirPanierActivity extends Activity{
 				ConstantesSoldes.lesArticles.clear();
 				Intent rechargementPagePanier = new Intent(VoirPanierActivity.this, VoirPanierActivity.class);
 				startActivity(rechargementPagePanier);
+				finish();
 			}
 		});
 		
@@ -165,6 +173,7 @@ public class VoirPanierActivity extends Activity{
 		            	ConstantesSoldes.lesArticles.remove(article);
 		            	Intent rechargementPagePanier = new Intent(VoirPanierActivity.this, VoirPanierActivity.class);
 						startActivity(rechargementPagePanier);
+						finish();
 		            }
 		        });
 				supprArticle.setNegativeButton("Non", new DialogInterface.OnClickListener() {
